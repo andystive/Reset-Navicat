@@ -3,8 +3,7 @@
 - 本脚本为批处理脚本
 - 具体实现过程为，删除注册表中与Navicat激活有关的键值
 - 写入注册表前会在系统temp文件夹中备份一个backup.reg注册表，可双击还原之前信息
-
-
+```
 Windows Registry Editor Version 5.00 
 [-HKEY_CURRENT_USER\Software\PremiumSoft\Data] 
 [-HKEY_CURRENT_USER\Software\Classes\CLSID\{2021CFC9-36E8-1170-32B2-68B5F3ED1F32}\Info] 
@@ -17,5 +16,4 @@ Windows Registry Editor Version 5.00
 [-HKEY_CURRENT_USER\Software\Classes\CLSID\{CF1206B2-FA97-951A-5DE4-F1B80EE2968D}\Info] 
 [-HKEY_CURRENT_USER\Software\Classes\CLSID\{ECBBEE67-BB2F-BFAD-FDD9-133B21EBCF9C}\Info] 
 [-HKEY_CURRENT_USER\Software\Classes\CLSID\{F8648CB5-CCFF-350D-ED25-FF039C5C59D2}\Info] 
-
-
+```

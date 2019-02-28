@@ -12,10 +12,10 @@ echo --------------------------
 echo     正在备份注册表...
 echo --------------------------
 reg EXPORT HKCU\Software %temp%\backup.reg
-set fr=-
 echo --------------------------
 echo   正在生成注册表文件...
 echo --------------------------
+set fr=-
 echo Windows Registry Editor Version 5.00 >> %temp%\Navicat.reg
 echo [-HKEY_CURRENT_USER\Software\PremiumSoft\Data] >>%temp%\Navicat.reg
 for /F "delims=" %%i in ('"REG QUERY "HKEY_CURRENT_USER\Software\Classes\CLSID" /s | findstr /E Info"') do (
